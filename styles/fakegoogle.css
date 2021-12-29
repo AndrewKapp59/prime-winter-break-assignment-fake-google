@@ -12,6 +12,7 @@ ul {
   list-style: none;
 }
 
+/* Nav Bar Area */
 .nav_bar {
   float: right;
 }
@@ -50,4 +51,18 @@ li.nav-links a:hover {
 
 .sign_in {
   color: #fff;
+}
+
+/* Logo Area */
+img{
+  clear: both;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
 }
