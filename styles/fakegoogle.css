@@ -1,68 +1,125 @@
-body {
-  font-family: 'Roboto', sans-serif;
+* {
+  font-family: arial, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-header {
+body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
   width: 100%;
 }
 
-ul {
-  list-style: none;
+/*nav and footer styles*/
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Nav Bar Area */
-.nav_bar {
-  float: right;
-}
-
-li.nav_bar {
-  display: inline-block;
-  padding: 8px;
-}
-
-.sign_in {
-  background: #4887ef;
-  border-radius: 3px;
-  display: inline-block;
-  font-weight: bold;
+footer ul, nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
   margin-right: 25px;
-  padding: 7px 15px;
+  padding: 0;
 }
 
-.nav-links {
-  color: #404040;
-  display: inline-block;
+nav ul {
+  margin-top: 15px;
 }
 
-a {
-  color: inherit;
+nav a, footer a{
+  color: #000;
+  display: block;
+  margin-left: 5px;
+  opacity: 0.75;
+  padding: .5em;
   text-decoration: none;
 }
 
-li.nav-links a:hover {
+nav a, footer a {
+  font-size: 13px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 350px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 25px;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
-.sign_in:hover {
-  box-shadow: 1px 1px 5px #999;
-}
-
-.sign_in {
-  color: #fff;
-}
-
-/* Logo Area */
-img{
-  clear: both;
+/*Google logo styles*/
+.logo-container {
   display: flex;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  padding-top: 150px;
-  text-align: center;
+  margin-top: 85px;
 }
 
-.form {
+.logo {
+  width: 272px;
+  margin: auto;
+}
+
+/*input styles*/
+.search-container{
+  display: flex;
+  justify-content: center;
+}
+
+ .search {
+  border: 1px solid #e4e4e4;
+  box-shadow: 2px 2px 3px 1px #e4e4e4;
+  max-width: 550px;
+  height: 40px;
+  border-radius: 2px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}
+
+input {
+  line-height: 34px;
+  width: 435px;
+  padding: 6px 6px 0px 16px;
+  font-size: 16px;
+  border: none;
+  height: 34px;
+  outline: none;
+}
+
+.search img {
+  position: relative;
+  top: 05px;
+  right: -425px;
+  cursor: pointer
+}
+
+/*search button styles*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  color: #757575;
+  margin-top: 25px;
+  margin-right: 5px;
+  padding: 0 15px;
+  height: 36px;
+  min-width: 50px;
   text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
 }
