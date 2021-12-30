@@ -18,7 +18,7 @@ nav {
   justify-content: space-between;
 }
 
-footer ul, nav ul {
+nav ul, footer ul {
   display: flex;
   list-style-type: none;
   margin-left: 25px;
@@ -30,7 +30,7 @@ nav ul {
   margin-top: 15px;
 }
 
-nav a, footer a{
+nav a, footer a {
   color: #000;
   display: block;
   margin-left: 5px;
@@ -62,7 +62,7 @@ footer {
   display: flex;
   justify-content: space-between;
   line-height: 25px;
-  margin-top: 335px;
+  margin-top: 550px;
 }
 
 a:hover {
@@ -142,7 +142,7 @@ button {
 }
 
 button:hover {
-  color: black;
   border: 1px solid #bdbdbd;
-  box-shadow: 0px 0.5px 0px 0px #d3d3d3;
+  box-shadow: 0 0.5px 0 0 #d3d3d3;
+  color: black;
 }
